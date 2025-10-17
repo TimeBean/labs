@@ -2,14 +2,14 @@
 
 import math
 
-print("Программа для подсчёта параметров равностороннего треугольника.")
+print("Программа для подсчёта параметров равностороннего треугольника.\n")
 
 side = float(input("Введите длину стороны > "))
 
 raw_perimeter = side * 3
 perimeter = round(raw_perimeter, 2)
 
-print("Периметр равен", perimeter)
+print("\nПериметр равен", perimeter)
 
 raw_area = side ** 2 * math.sqrt(3) / 4
 area = round(raw_area, 2)
