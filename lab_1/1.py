@@ -1,17 +1,18 @@
 #Даны катеты прямоугольного треугольника. Найти его гипотенузу, периметр и площадь.
+
 import math
 
 first_cathet = int(input("Длина первого катета > "))
 second_cathet = int(input("Длина второго катета > "))
 
-raw_hypotension = math.sqrt(first_cathet ** 2 + second_cathet ** 2)
+raw_hypotenuse = math.sqrt(first_cathet ** 2 + second_cathet ** 2)
 print("Гипотинуза треугольника равна ", end='')
 
-hypotension = 0
+hypotenuse = 0
 
-if raw_hypotension == round(raw_hypotension):
-    hypotension = round(raw_hypotension)
+if raw_hypotenuse == round(raw_hypotenuse):
+    hypotenuse = round(raw_hypotenuse)
 else:
-    hypotension = round(raw_hypotension, 2)
-
-print(hypotension)
+    #огругляем до двух знаков, если это не нужно, убрать.
+    hypotenuse = round(raw_hypotenuse, 2) 
+print(hypotenuse)
