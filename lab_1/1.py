@@ -15,4 +15,5 @@ if raw_hypotenuse == round(raw_hypotenuse):
 else:
     #огругляем до двух знаков, если это не нужно, убрать.
     hypotenuse = round(raw_hypotenuse, 2) 
+
 print(hypotenuse)
