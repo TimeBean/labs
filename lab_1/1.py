@@ -4,8 +4,8 @@ import math
 
 print("Программа для подсчёта параметров прямоугольного треугольника.\n")
 
-first_cathet = int(input("Длина первого катета > "))
-second_cathet = int(input("Длина второго катета > "))
+first_cathet = float(input("Длина первого катета > "))
+second_cathet = float(input("Длина второго катета > "))
 
 raw_hypotenuse = math.sqrt(first_cathet ** 2 + second_cathet ** 2)
 
@@ -14,7 +14,7 @@ print("\nГипотинуза треугольника равна", hypotenuse)
 
 raw_perimeter = first_cathet + second_cathet + raw_hypotenuse
 
-perimeter = round(raw_hypotenuse, 2)
+perimeter = round(raw_perimeter, 2)
 
 print("Периметр треугольника равен", perimeter)
 
