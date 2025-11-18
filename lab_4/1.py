@@ -3,11 +3,6 @@
 
 import random
 
-ALPHABET = ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З',
-           'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р',
-           'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ',
-           'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я' ]
-
 WORDS_COUNT = 100
 WORD_LENGHT = 5
 
@@ -18,7 +13,7 @@ words = []
 for _ in range(WORDS_COUNT):
     word = ''
     for _ in range(WORD_LENGHT):
-        word += ALPHABET[random.randint(0, len(ALPHABET) - 1)]
+        word += chr(random.randint(1073, 1073 + 31))
         
     words.append(word)
     
